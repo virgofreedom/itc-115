@@ -8,3 +8,49 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2018-09-24 17:49:28.388
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2018-09-26 18:34:46.533
+!MESSAGE Failed to resolve selection in ‘=WebCode/src<{DrawFigures.java’ at offset 137.
+!STACK 1
+Java Model Exception: Java Model Status [Index out of bounds]
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:163)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:390)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:383)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:138)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2018-09-26 18:34:46.539
+!MESSAGE Index out of bounds
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2018-09-26 18:38:51.880
+!MESSAGE Failed to resolve selection in ‘=WebCode/src<{DrawFigures.java’ at offset 305.
+!STACK 1
+Java Model Exception: Java Model Status [Index out of bounds]
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:163)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:390)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:383)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:138)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2018-09-26 18:38:51.880
+!MESSAGE Index out of bounds
